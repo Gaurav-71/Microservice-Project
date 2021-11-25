@@ -1,14 +1,16 @@
-# Microservice-Project
+# Microservices Project
 
-7th Sem Microservice Spring Boot Project
+7th Sem Microservices Project using Spring Boot & Eureka
 
-## Installation Steps
+## Installation Steps ( macOS )
 
 - Prerequisites
 
-  - [MySQL](https://dev.mysql.com/downloads/mysql/)
+  - [Java 11](https://devqa.io/brew-install-java/)
 
-  - [MySql Workbench]()
+  - [MySQL 8.0.27](https://dev.mysql.com/downloads/mysql/)
+
+  - [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
   - `brew install maven`
 
@@ -17,3 +19,25 @@
   `brew tap spring-io/tap`
 
   `brew install spring-boot`
+
+## Steps to run
+
+1. Use port 3306 and create a table named "college" using mySQL workbench
+
+2. cd into each folder and run the following command.
+
+   `./mvnw spring-boot:run`
+
+## Reference Links
+
+- [What is service discovery ?](https://www.youtube.com/watch?v=GboiMJm6WlA)
+
+- [Eureka Integration](https://www.youtube.com/watch?v=o2QqoQJGeNY&t=870s)
+
+- [Spring Initializr](https://start.spring.io/)
+
+## Team Members
+
+1. Gaurav V, 1MS18CS046
+
+2. Divya, 1MS18CS043

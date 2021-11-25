@@ -16,12 +16,17 @@ public class DepartmentController {
 
     @GetMapping("/")
     public String home() {
-        return "<h1>Department Service</h1>";
+        return "<h1>Department Service</h1> <ul> <li><a href='/getCollegeName'>View College Name</a></li> <li><a href='/getAllDepartments'>View All Departments</a></li> <li><a href='/deleteAll'>Delete All Departments</a></li><li>Perform Add/Update operations using Postman</li><li><a href='http://localhost:8761/' target='_blank'>View Eureka Server </a> </li> <li><a href='http://localhost:8081/' target='_blank'> View Student Application Service</a></li> </ul> <span>Made By Gaurav V & Divya</span>";
     }
 
     @GetMapping("/getAllDepartments")
     public List<Department> getAllDepartments() {
         return DepartmentService.getAllDepartments();
+    }
+
+    @GetMapping("/getCollegeName")
+    public String getCollegeName() {
+        return "<h3>M.S. Ramaiah Institute of Technology</h3>";
     }
 
     @GetMapping("/get/{DepartmentID}")
@@ -37,7 +42,7 @@ public class DepartmentController {
     @DeleteMapping("/deleteDepartment/{DepartmentId}")
     public String deleteDepartment(@PathVariable String DepartmentId) {
         DepartmentService.delete(DepartmentId);
-        return "Employee Deleted";
+        return "<h3>Department Deleted</h3>";
     }
 
     @PutMapping("/updateDepartment/{DepartmentId}")
@@ -48,6 +53,6 @@ public class DepartmentController {
     @DeleteMapping("/deleteAll")
     public String deleteDepartments() {
         DepartmentService.deleteAll();
-        return "All Emplyees data deleted";
+        return "<h3>All Departments data deleted</h3>";
     }
 }
