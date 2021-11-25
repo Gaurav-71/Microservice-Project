@@ -8,7 +8,7 @@
 
   - [MySQL](https://dev.mysql.com/downloads/mysql/)
 
-  - [phpMyAdmin]()
+  - [MySql Workbench]()
 
   - `brew install maven`
 
@@ -17,7 +17,3 @@
   `brew tap spring-io/tap`
 
   `brew install spring-boot`
-
-## Random Steps
-
-- Run apache server : `sudo apachectl start`
