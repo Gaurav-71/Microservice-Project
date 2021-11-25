@@ -1,14 +1,13 @@
-package com.example.admissionallotmentservice;
+package com.example.admissionprocessservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@EnableEurekaClient
-public class AdmissionAllotmentServiceApplication {
+public class AdmissionProcessServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AdmissionAllotmentServiceApplication.class, args);
+		SpringApplication.run(AdmissionProcessServiceApplication.class, args);
 	}
 
 }

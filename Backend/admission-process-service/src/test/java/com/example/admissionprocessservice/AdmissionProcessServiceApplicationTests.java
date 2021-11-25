@@ -1,10 +1,10 @@
-package com.example.admissionallotmentservice;
+package com.example.admissionprocessservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AdmissionAllotmentServiceApplicationTests {
+class AdmissionProcessServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
