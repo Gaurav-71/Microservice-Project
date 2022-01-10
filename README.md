@@ -27,6 +27,10 @@
 2. cd into each folder and run the following command.
 
    `./mvnw spring-boot:run`
+   
+## Video Explanation
+
+https://youtu.be/glHwY-t9RU0
 
 ## Reference Links
 
